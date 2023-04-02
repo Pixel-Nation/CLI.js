@@ -1,0 +1,44 @@
+{
+  "name": "clijs",
+  "version": "1.0.0",
+  "description": "A CLI version for the PN that is written in Node.JS by Kubik.",
+  "main": "index.js",
+  "scripts": {
+    "start": "[ ! -d 'node_modules' ] && npm install; clear && node .",
+    "build": "[ ! -d 'node_modules' ] && npm install; clear && node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pixel-Nation/CLI.js.git"
+  },
+  "author": "TotoroGaming",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pixel-Nation/CLI.js/issues"
+  },
+  "homepage": "https://github.com/Pixel-Nation/CLI.js#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^10.0.0",
+    "node-fetch": "^2.6.9",
+    "pkg": "^5.8.1",
+    "prompts": "^2.4.2",
+    "readline-sync": "^1.4.10"
+  },
+  "pkg": {
+    "scripts": "./index.js",
+    "targets": [
+      "node16-linuxstatic-arm64",
+      "node16-alpine-arm64",
+      "node16-linux-arm64",
+      "node16-macos-arm64",
+      "node16-win-arm64",
+      "node16-linuxstatic-x64",
+      "node16-alpine-x64",
+      "node16-linux-x64",
+      "node16-macos-x64",
+      "node16-win-x64"
+    ],
+    "outputPath": "./build"
+  }
+}
